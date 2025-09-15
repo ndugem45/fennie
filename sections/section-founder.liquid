@@ -19,26 +19,26 @@
   }
 {% endstyle %}
 
-{% comment %} <video class="desktop" loop playsinline poster="{{ 'founder_cover.png' | asset_url }}">
+<video class="desktop" loop playsinline poster="{{ 'founder_cover.png' | asset_url }}">
   <source src="{{ 'founder_vid_3.mp4' | asset_url }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 <video class="mobile" loop playsinline poster="{{ 'founder_cover.png' | asset_url }}">
   <source src="{{ 'founder_vid_4.mp4' | asset_url }}" type="video/mp4">
   Your browser does not support the video tag.
-</video> {% endcomment %}
+</video>
 
 {% comment %} mobile = video 4 {% endcomment %}
  {% comment %} dekstop = video 3 {% endcomment %}
 
-<video loop playsinline poster="{{ 'founder_cover.png' | asset_url }}">
+{% comment %} <video loop playsinline poster="{{ 'founder_cover.png' | asset_url }}">
   {% if request.device_type == 'mobile' %}
     <source src="{{ 'founder_4.mp4' | asset_url }}" type="video/mp4">
   {% else %}
     <source src="{{ 'founder_vid_3.mp4' | asset_url }}" type="video/mp4">
   {% endif %}
   Your browser does not support the video tag.
-</video>
+</video> {% endcomment %}
 
 <div class="container">
   <span class="label"> {{section.settings.label}} </span>
@@ -91,22 +91,24 @@
 
     $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
       event.stopPropagation();
-      var vid = $('#shopify-section-{{section.id}} video')[0];
+      var vid = $('#shopify-section-{{section.id}} video');
       var playIco = event.currentTarget.querySelector('#pause');
       var pauseIco = event.currentTarget.querySelector('#play');
       var founder = $('#shopify-section-{{section.id}}');
-
-      if (vid.paused) {
-        pauseIco.style.display = 'block';
-        playIco.style.display = 'none';
-        vid.play();
-        founder.addClass('active'); 
-      } else {
-        playIco.style.display = 'block';
-        pauseIco.style.display = 'none';
-        vid.pause();
-        founder.removeClass('active');
-      }
+      
+      vid.each((v, i)=>{
+        if (vid.paused) {
+          pauseIco.style.display = 'block';
+          playIco.style.display = 'none';
+          i.play();
+          founder.addClass('active'); 
+        } else {
+          playIco.style.display = 'block';
+          pauseIco.style.display = 'none';
+          i.pause();
+          founder.removeClass('active');
+        }
+      })
     });
 
 </script>
