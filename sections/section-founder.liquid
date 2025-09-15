@@ -96,9 +96,7 @@
       var pauseIco = event.currentTarget.querySelector('#play');
       var founder = $('#shopify-section-{{section.id}}');
       
-      vid.each((v, i)=>{
-        console.log(v)
-        console.log(i)
+      vid.each((i, v)=>{
         if (v.paused) {
           pauseIco.style.display = 'block';
           playIco.style.display = 'none';
