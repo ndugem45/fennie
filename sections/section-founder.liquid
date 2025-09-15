@@ -95,19 +95,17 @@
       var playIco = event.currentTarget.querySelector('#pause');
       var pauseIco = event.currentTarget.querySelector('#play');
       var founder = $('#shopify-section-{{section.id}}');
-
-      console.log(vid)
       
       vid.each((v, i)=>{
-        if (vid.paused) {
+        if (v.paused) {
           pauseIco.style.display = 'block';
           playIco.style.display = 'none';
-          i.play();
+          v.play();
           founder.addClass('active'); 
         } else {
           playIco.style.display = 'block';
           pauseIco.style.display = 'none';
-          i.pause();
+          v.pause();
           founder.removeClass('active');
         }
       })
