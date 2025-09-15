@@ -89,7 +89,7 @@
       }
     }); {% endcomment %}
 
-  {% comment %} $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
+    $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
         event.stopPropagation();
         var vid = $('#shopify-section-{{section.id}} video');
         var playIco = event.currentTarget.querySelector('#pause');
@@ -109,45 +109,7 @@
             founder.removeClass('active');
           }
         })
-      }); {% endcomment %}
-
-$('#shopify-section-{{section.id}} .btn-play').on('click touchstart', function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-    
-    var $this = $(this);
-    var vid = $('#shopify-section-{{section.id}} video')[0]; // Ambil elemen DOM asli
-    var playIco = $this.find('.play-icon'); // Gunakan class selector
-    var pauseIco = $this.find('.pause-icon'); // Gunakan class selector
-    var founder = $('#shopify-section-{{section.id}}');
-    
-    // Pastikan video sudah loaded
-    if (vid && vid.readyState >= 2) {
-        if (vid.paused) {
-            // Play video
-            vid.play().then(function() {
-                pauseIco.show();
-                playIco.hide();
-                founder.addClass('active');
-            }).catch(function(error) {
-                console.log('Error playing video:', error);
-            });
-        } else {
-            // Pause video
-            vid.pause();
-            playIco.show();
-            pauseIco.hide();
-            founder.removeClass('active');
-        }
-    }
-});
-
-// Tambahan: Handle video events
-$('#shopify-section-{{section.id}} video').on('loadeddata', function() {
-    // Video siap diputar
-    $(this).closest('section').find('.btn-play').removeClass('disabled');
-});
-
+      });
 
 
 
