@@ -91,6 +91,7 @@
 
     $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
         event.stopPropagation();
+        event.preventDefault();
         var vid = $('#shopify-section-{{section.id}} video');
         var playIco = event.currentTarget.querySelector('#pause');
         var pauseIco = event.currentTarget.querySelector('#play');
