@@ -89,7 +89,7 @@
       }
     }); {% endcomment %}
 
-    $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
+    {% comment %} $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
       event.stopPropagation();
       var vid = $('#shopify-section-{{section.id}} video');
       var playIco = event.currentTarget.querySelector('#pause');
@@ -109,7 +109,33 @@
           founder.removeClass('active');
         }
       })
-    });
+    }); {% endcomment %}
+
+
+    $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  var vid = $('#shopify-section-{{section.id}} video');
+  var playIco = event.currentTarget.querySelector('#play');
+  var pauseIco = event.currentTarget.querySelector('#pause');
+  var founder = $('#shopify-section-{{section.id}}');
+  
+  vid.each((i, v) => {
+    if (v.paused) {
+      pauseIco.style.display = 'block';
+      playIco.style.display = 'none';
+      v.play();
+      founder.addClass('active');
+    } else {
+      playIco.style.display = 'block';
+      pauseIco.style.display = 'none';
+      v.pause();
+      v.currentTime = v.currentTime; // fix Safari pause bug
+      founder.removeClass('active');
+    }
+  });
+});
 
 </script>
 
