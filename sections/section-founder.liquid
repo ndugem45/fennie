@@ -89,7 +89,7 @@
       }
     }); {% endcomment %}
 
-    $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
+    {% comment %} $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
         event.stopPropagation();
         event.preventDefault();
         var vid = $('#shopify-section-{{section.id}} video');
@@ -110,7 +110,33 @@
             founder.removeClass('active');
           }
         })
-      });
+      }); {% endcomment %}
+      
+const section = document.getElementById('shopify-section-{{section.id}}');
+const btn = section.querySelector('.btn-play');
+
+// ambil video sesuai device
+const vid = section.querySelector('video.mobile') || section.querySelector('video.desktop');
+
+const playIco = btn.querySelector('#play');
+const pauseIco = btn.querySelector('#pause');
+
+btn.addEventListener('click', e => {
+  e.preventDefault();
+  e.stopPropagation();
+
+  if (vid.paused) {
+    vid.play();
+    playIco.style.display = 'none';
+    pauseIco.style.display = 'block';
+    section.classList.add('active');
+  } else {
+    vid.pause();
+    playIco.style.display = 'block';
+    pauseIco.style.display = 'none';
+    section.classList.remove('active');
+  }
+});
 
 
 
