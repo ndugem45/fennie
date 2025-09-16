@@ -90,14 +90,3 @@ navlinks.forEach(link => {
 });
 
 
-const menuToggle = document.getElementById("menuToggle");
-const iconNav = menuToggle.querySelector(".icon-nav");
-
-menuToggle.addEventListener("click", () => {
-  
-  if (iconNav.classList.contains("close")) {
-    iconNav.classList.remove("close");
-  } else {
-    iconNav.classList.add("close");
-  }
-});
