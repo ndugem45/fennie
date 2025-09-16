@@ -109,6 +109,7 @@ nav .nav-menus{
 		display: flex;
 		z-index: 99;
 	}
+
   .btn-icon-close .icon-hum {
     display: none;
     cursor: pointer;
@@ -117,6 +118,7 @@ nav .nav-menus{
     display: flex;
     cursor: pointer;
   }
+  
   nav .nav-logo{
 	z-index: 99;
 	position: relative;
