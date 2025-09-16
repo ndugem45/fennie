@@ -780,7 +780,9 @@ nav .right-group a {
 	flex-direction: row;
 	justify-content: space-between;
 }
-
+.mobile-rep_btn{
+	display: none;
+}
 
 
 @media only screen and (max-width: 990px) {
@@ -789,9 +791,12 @@ nav .right-group a {
 		letter-spacing: -1.3px;
 		margin-bottom: 42px;
 	}
-	
+
 	.dekstop-rep_btn{
 		display: none;
+	}
+	.mobile-rep_btn{
+		display: flex;
 	}
 }
 @media only screen and (max-width: 480px) {
