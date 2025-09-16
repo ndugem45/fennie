@@ -782,7 +782,7 @@ nav .right-group a {
 	justify-content: space-between;
 }
 .mobile-rep_btn{
-	display: none;
+	display: none!important;
 }
 .dekstop-rep_btn{
 	margin-top: 0!important;
@@ -797,8 +797,8 @@ nav .right-group a {
 	}
 
 	.mobile-rep_btn{
-		display: flex;
-		justify-content: center;
+		display: flex!important;
+		justify-content: center!important;
 	}
 }
 @media only screen and (max-width: 480px) {
