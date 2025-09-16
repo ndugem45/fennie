@@ -110,6 +110,10 @@ nav .nav-menus{
     display: flex;
     cursor: pointer;
   }
+.btn-icon-close .icon-close {
+    display: flex;
+    cursor: pointer;
+  }
   nav .nav-logo{
 	z-index: 99;
 	position: relative;
