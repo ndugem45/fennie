@@ -107,11 +107,11 @@ nav .nav-menus{
   }
 
   .btn-icon-close .icon-hum {
-    display: flex;
+    display: none;
     cursor: pointer;
   }
 	.btn-icon-close .icon-close {
-    display: none;
+    display: flex;
     cursor: pointer;
   }
   nav .nav-logo{
