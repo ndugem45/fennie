@@ -792,9 +792,6 @@ nav .right-group a {
 		margin-bottom: 42px;
 	}
 
-	.dekstop-rep_btn{
-		display: none;
-	}
 	.mobile-rep_btn{
 		display: flex;
 	}
@@ -803,6 +800,9 @@ nav .right-group a {
 	.representation h2 {
 		font-size: 54px;
 		letter-spacing: -1.12px;
+	}
+	.dekstop-rep_btn{
+		display: none;
 	}
 }
 
