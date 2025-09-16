@@ -86,6 +86,9 @@ navlinks.forEach(link => {
     menuGroup.classList.remove("shows");
     infotop.classList.remove("show");
     document.documentElement.style.overflow = "";
+    iconavs.forEach(icon => {
+      icon.classList.toggle("close");
+    });
   });
 });
 
