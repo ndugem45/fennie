@@ -60,6 +60,7 @@ window.addEventListener("scroll", () => {
 const menuToggle = document.getElementById("menuToggle");
 const menuGroup = document.getElementById("menuGroup");
 const infotop = document.getElementById("info");
+const iconav = document.getElementByClass("icon-nav");
 
 menuToggle.addEventListener("click", () => {
   menuGroup.classList.toggle("shows");
@@ -71,12 +72,6 @@ menuToggle.addEventListener("click", () => {
     document.documentElement.style.overflow = "";
   }
 });
-
-// navlink.addEventListener("click", () => {
-//   menuGroup.classList.remove("shows");
-//   infotop.classList.remove("show");
-//   document.documentElement.style.overflow = "";
-// });
 
 
 const navlinks = document.querySelectorAll("#navlink");
