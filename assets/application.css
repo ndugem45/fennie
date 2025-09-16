@@ -54,7 +54,8 @@ nav .menu-group {
 	z-index: 99;
 }
 .btn-icon-close .icon-hum{
- display: block;
+ display: none;
+
 }
 
 .btn-icon-close .icon-close{
