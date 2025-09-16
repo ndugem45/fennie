@@ -746,7 +746,8 @@ nav .right-group a {
 }
 
 .representation {
-	padding-block: 64px;
+	padding-bottom: 10px;
+	padding-top: 64px;
 	background-color: #f5efe8;
 }
 
