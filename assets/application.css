@@ -802,7 +802,7 @@ nav .right-group a {
 		letter-spacing: -1.12px;
 	}
 	.dekstop-rep_btn{
-		display: none;
+		display: none!important;
 	}
 }
 
