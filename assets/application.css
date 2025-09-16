@@ -775,7 +775,11 @@ nav .right-group a {
 }
 
 
-
+.slider-rep-layout{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 
 
 
