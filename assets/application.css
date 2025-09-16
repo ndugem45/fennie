@@ -50,10 +50,10 @@ nav .menu-group {
 	/* margin-right: 64px; */
 	margin-left: auto;
 }
-.btn-icon-close{
+/* .btn-icon-close{
 	display: none;
 	z-index: 99;
-}
+} */
 .btn-icon-close .icon-hum{
  display: block;
 }
