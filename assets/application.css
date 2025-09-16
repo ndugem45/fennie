@@ -54,11 +54,11 @@ nav .menu-group {
 	display: none;
 	z-index: 99;
 }
-#menuToggle .icon-hum{
+.btn-icon-close .icon-hum{
  display: block;
 }
 
-#menuToggle .icon-close{
+.btn-icon-close .icon-close{
  display: none;
 }
 nav-layout {
