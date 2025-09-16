@@ -115,7 +115,7 @@ nav .nav-menus{
     cursor: pointer;
   }
 	.btn-icon-close .icon-close {
-    display: flex;
+    display: none;
     cursor: pointer;
   }
 
