@@ -75,12 +75,7 @@ menuToggle.addEventListener("click", () => {
 navlink.addEventListener("click", () => {
   menuGroup.classList.remove("shows");
   infotop.classList.remove("show");
-
-  if (menuGroup.classList.contains("shows")) {
-    document.documentElement.style.overflow = "hidden";
-  } else {
-    document.documentElement.style.overflow = "";
-  }
+  document.documentElement.style.overflow = "";
 });
 
 
