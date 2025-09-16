@@ -60,13 +60,16 @@ window.addEventListener("scroll", () => {
 const menuToggle = document.getElementById("menuToggle");
 const menuGroup = document.getElementById("menuGroup");
 const infotop = document.getElementById("info");
-const iconav = document.getElementsByClassName("icon-nav");
+const iconavs = document.querySelectorAll(".icon-nav");
 
 
 menuToggle.addEventListener("click", () => {
   menuGroup.classList.toggle("shows");
   infotop.classList.toggle("show");
-  iconav.classList.toogle("close");
+
+ iconavs.forEach(icon => {
+    icon.classList.toggle("close");
+  });
 
   if (menuGroup.classList.contains("shows")) {
     document.documentElement.style.overflow = "hidden";
