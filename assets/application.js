@@ -60,16 +60,13 @@ window.addEventListener("scroll", () => {
 const menuToggle = document.getElementById("menuToggle");
 const menuGroup = document.getElementById("menuGroup");
 const infotop = document.getElementById("info");
-const iconavs = document.querySelectorAll(".icon-nav");
+const iconav = document.getElementsByClassName("icon-nav");
 
 
 menuToggle.addEventListener("click", () => {
   menuGroup.classList.toggle("shows");
   infotop.classList.toggle("show");
-
-  iconavs.forEach(icon => {
-    icon.classList.toggle("close");
-  });
+  iconav.classList.toogle("close");
 
   if (menuGroup.classList.contains("shows")) {
     document.documentElement.style.overflow = "hidden";
@@ -78,5 +75,15 @@ menuToggle.addEventListener("click", () => {
   }
 });
 
+
+const navlinks = document.querySelectorAll("#navlink");
+
+navlinks.forEach(link => {
+  link.addEventListener("click", () => {
+    menuGroup.classList.remove("shows");
+    infotop.classList.remove("show");
+    document.documentElement.style.overflow = "";
+  });
+});
 
 
