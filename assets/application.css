@@ -54,10 +54,13 @@ nav .menu-group {
 	display: none;
 	z-index: 99;
 }
-.icon-hum{
-	
+#menuToggle .icon-hum{
+ display: block;
 }
 
+#menuToggle .icon-close{
+ display: none;
+}
 nav-layout {
   display: flex;
   justify-content: space-between;
