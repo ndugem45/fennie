@@ -106,7 +106,7 @@ nav .nav-menus{
 	height: 100vh;
   }
 
-  .btn-icon-close {
+  .btn-icon-close .icon-hum {
     display: flex;
     cursor: pointer;
   }
