@@ -55,7 +55,7 @@ window.addEventListener("scroll", () => {
   prevScrollPos = currentScrollPos;
 });
 
-const navlink = document.querySelectorAll(".navlink");
+const navlink = document.querySelectorAll("#navlink");
 
 const menuToggle = document.getElementById("menuToggle");
 const menuGroup = document.getElementById("menuGroup");
