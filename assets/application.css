@@ -1827,6 +1827,7 @@ padding-inline: 224px;
 
 .animate span{
 	animation: italic-span 900ms ease 0s 1 normal forwards;
+	font-family: Farmhouse;
 }
 
 @keyframes italic-span {
