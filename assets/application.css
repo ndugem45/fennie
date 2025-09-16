@@ -114,13 +114,21 @@ nav .nav-menus{
 	z-index: 99;
 	position: relative;
   }
+
 }
 
 /* Desktop (hide toggle) */
 @media (min-width: 769px) {
-  .btn-icon-close {
-    display: none;
-  }
+	.btn-icon-close {
+		display: none;
+	}
+	.btn-icon-close .icon-hum{
+		display: none;
+		}
+
+	.btn-icon-close .icon-close{
+		display: block;
+		}
 }
 
 @media only screen and (max-width: 990px) {
