@@ -110,11 +110,11 @@ nav .nav-menus{
 		z-index: 99;
 	}
 
-  .btn-icon-close .icon-hum.close {
+  .btn-icon-close .icon-hum {
     display: none;
     cursor: pointer;
   }
-	.btn-icon-close .icon-close.close {
+	.btn-icon-close .icon-close {
     display: flex;
     cursor: pointer;
   }
