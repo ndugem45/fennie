@@ -91,9 +91,9 @@ navlinks.forEach(link => {
 
 
 const menuToggle = document.getElementById("menuToggle");
+const iconNav = menuToggle.querySelector(".icon-nav");
 
 menuToggle.addEventListener("click", () => {
-  const iconNav = menuToggle.querySelector(".icon-nav");
   
   if (iconNav.classList.contains("close")) {
     iconNav.classList.remove("close");
