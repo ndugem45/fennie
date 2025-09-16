@@ -107,7 +107,7 @@ nav .nav-menus{
   }
 
   .btn-icon-close {
-    display: block;
+    display: flex;
     cursor: pointer;
   }
   nav .nav-logo{
@@ -119,9 +119,9 @@ nav .nav-menus{
 
 /* Desktop (hide toggle) */
 @media (min-width: 769px) {
-	.btn-icon-close {
+	/* .btn-icon-close {
 		display: none;
-	}
+	} */
 	.btn-icon-close .icon-hum{
 		display: none;
 		}
