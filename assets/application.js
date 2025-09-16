@@ -85,6 +85,7 @@ navlinks.forEach(link => {
   link.addEventListener("click", () => {
     menuGroup.classList.remove("shows");
     infotop.classList.remove("show");
+    icon.classList.toggle("close");
     document.documentElement.style.overflow = "";
   });
 });
