@@ -110,8 +110,8 @@ nav .nav-menus{
     display: flex;
     cursor: pointer;
   }
-.btn-icon-close .icon-close {
-    display: flex;
+	.btn-icon-close .icon-close {
+    display: none;
     cursor: pointer;
   }
   nav .nav-logo{
@@ -131,7 +131,7 @@ nav .nav-menus{
 		}
 
 	.btn-icon-close .icon-close{
-		display: block;
+		display: flex;
 		}
 }
 
