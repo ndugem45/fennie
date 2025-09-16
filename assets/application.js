@@ -20,6 +20,7 @@ function scrollToSection(target, offset) {
         top: offsetPosition,
         behavior: "smooth"
     });
+    
 }
 
 // const navbar = document.querySelector("nav");
