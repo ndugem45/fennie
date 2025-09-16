@@ -61,6 +61,7 @@ nav .menu-group {
 .btn-icon-close .icon-close{
  display: none;
 }
+
 nav-layout {
   display: flex;
   justify-content: space-between;
