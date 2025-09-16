@@ -55,7 +55,6 @@ window.addEventListener("scroll", () => {
   prevScrollPos = currentScrollPos;
 });
 
-const navlink = document.getElementById('navlink')
 
 const menuToggle = document.getElementById("menuToggle");
 const menuGroup = document.getElementById("menuGroup");
@@ -72,10 +71,15 @@ menuToggle.addEventListener("click", () => {
   }
 });
 
-navlink.addEventListener("click", () => {
-  menuGroup.classList.remove("shows");
-  infotop.classList.remove("show");
-  document.documentElement.style.overflow = "";
+const navlinks = document.querySelectorAll('.navlink');
+
+navlinks.forEach(link => {
+  link.addEventListener("click", () => {
+    menuGroup.classList.remove("shows");
+    infotop.classList.remove("show");
+    document.documentElement.style.overflow = "";
+  });
 });
+
 
 
