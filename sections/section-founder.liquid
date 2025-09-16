@@ -73,45 +73,6 @@
 </div>
 
 <script>
-   {% comment %} $('#shopify-section-{{section.id}} .btn-play').on('click', function () {
-      event.stopPropagation();
-      var vid = $('#shopify-section-{{section.id}} video')[0];
-      var playIco = event.currentTarget.querySelector('#play')
-      var pauseIco = event.currentTarget.querySelector('#pause')
-      if(vid.paused){
-        pauseIco.style.display = 'none'
-        playIco.style.display = 'block'
-        vid.play()
-      }else{
-        playIco.style.display = 'none'
-        pauseIco.style.display = 'block'
-        vid.pause()
-      }
-    }); {% endcomment %}
-
-    {% comment %} $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
-        event.stopPropagation();
-        event.preventDefault();
-        var vid = $('#shopify-section-{{section.id}} video');
-        var playIco = event.currentTarget.querySelector('#pause');
-        var pauseIco = event.currentTarget.querySelector('#play');
-        var founder = $('#shopify-section-{{section.id}}');
-        
-        vid.each((i, v)=>{
-          if (v.paused) {
-            pauseIco.style.display = 'block';
-            playIco.style.display = 'none';
-            v.play();
-            founder.addClass('active'); 
-          } else {
-            playIco.style.display = 'block';
-            pauseIco.style.display = 'none';
-            v.pause();
-            founder.removeClass('active');
-          }
-        })
-      }); {% endcomment %}
-
     const section = document.getElementById('shopify-section-{{section.id}}');
     const btn = section.querySelector('.btn-play');
 
