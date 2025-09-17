@@ -221,6 +221,18 @@
         v.parentElement.parentElement.querySelector('video').pause();
         v.parentElement.parentElement.parentElement.classList.remove('active');
       })
+
+      if(slick.currentSlide+1 == slick.slideCount){
+        $('#shopify-section-{{section.id}} .slider-right').addClass('disable')
+      }else{
+        $('#shopify-section-{{section.id}} .slider-right').removeClass('disable')
+      }
+
+      if(slick.currentSlide == 0){
+        $('#shopify-section-{{section.id}} .slider-left').addClass('disable')
+      }else{
+        $('#shopify-section-{{section.id}} .slider-left').removeClass('disable')
+      }
     });
 
     $('#shopify-section-{{section.id}} .slider').slick({
