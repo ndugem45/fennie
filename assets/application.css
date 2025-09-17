@@ -439,7 +439,6 @@ nav .right-group a {
 		padding-block: 0px;
 		flex-direction: column-reverse;
 		padding-inline: 20px !important;
-		gap: 40px;
 	}
 }
 
