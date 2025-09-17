@@ -1059,6 +1059,11 @@ nav .right-group a {
 	z-index: 4;
 }
 
+.representation .slider-nav button.disable {
+	cursor: auto;
+	opacity: 0.3;
+}
+
 .representation .slider-nav .slider-right {
 	/* margin-bottom: -64px;
     top: -80px;
