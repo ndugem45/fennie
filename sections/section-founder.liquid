@@ -79,6 +79,10 @@
       e.preventDefault();
       e.stopPropagation();
 
+      section.querySelectorAll('.scroll-animate, .scroll-animate--active').forEach(el => {
+        el.classList.remove('scroll-animate', 'scroll-animate--active');
+      });
+
       if (vid.paused) {
         vid.play();
         playIco.style.display = 'none';
