@@ -1885,12 +1885,12 @@ padding-inline: 224px;
 /* animate */
 
 .scroll-animate {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease-out;
+  opacity: 0!important;
+  transform: translateY(40px)!important;
+  transition: all 0.6s ease-out!important;
 }
 
 .scroll-animate--active {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1!important;
+  transform: translateY(0)!important;
 }
