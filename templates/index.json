@@ -15,9 +15,9 @@
         "label": "HONOURING  EVERY EATING STYLE",
         "title": "A custom plate crafted for the way we eat",
         "desc": "<p>Protecting the most important part of your meal</p>",
-        "enable_cta": false,
+        "enable_cta": true,
         "cta_title": "order on kickstarter",
-        "cta_url": "",
+        "cta_url": "https://www.kickstarter.com/projects/feeniestable/feenie-section-plate",
         "enable_slider": false,
         "metafields": [
           "new-york-times",
