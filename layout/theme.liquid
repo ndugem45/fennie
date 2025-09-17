@@ -94,8 +94,10 @@
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
+              const delay = entry.target.getAttribute("data-delay") || 0;
+              entry.target.style.transitionDelay = `${delay}ms`;
               entry.target.classList.add("scroll-animate--active");
-              observer.unobserve(entry.target);
+              observer.unobserve(entry.target); // animasi hanya sekali
             }
           });
         }, {
@@ -105,6 +107,7 @@
         document.querySelectorAll(".scroll-animate").forEach(el => observer.observe(el));
       });
     </script>
+
 
   </body>
 </html>
