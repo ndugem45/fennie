@@ -89,6 +89,22 @@
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     {{ 'application.js' | asset_url | script_tag }}
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("scroll-animate--active");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.2
+        });
+
+        document.querySelectorAll(".scroll-animate").forEach(el => observer.observe(el));
+      });
+    </script>
 
   </body>
 </html>
