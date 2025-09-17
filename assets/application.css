@@ -453,6 +453,7 @@ nav .right-group a {
 @media only screen and (max-width: 990px) {
 	.about .container .cover {
 		max-width: 100%;
+		aspect-ratio: 4 / 3!important;
 	}
 }
 
