@@ -1443,6 +1443,11 @@ nav .right-group a {
 	background: rgba(38, 21, 12, 0);
 }
 
+.testimonial .slider-nav button.disable {
+	cursor: auto;
+	opacity: 0.3;
+}
+
 .testimonial .slider-nav button:hover {
 	background: rgba(38, 21, 12, 0.08);
 }
