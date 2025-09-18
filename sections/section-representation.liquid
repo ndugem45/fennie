@@ -228,11 +228,10 @@
             parent.classList.remove('active');
           }
 
-          // reset saat video habis
           video.addEventListener('ended', () => {
             parent.classList.remove('active');
             video.pause();
-            video.currentTime = 0; // balik ke awal → poster muncul
+            video.currentTime = 0;
           });
         });
       });
