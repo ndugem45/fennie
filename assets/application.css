@@ -507,6 +507,12 @@ nav .right-group a {
 		letter-spacing: -1.12px;
 	}
 }
+@media only screen and (width: 430px) {
+	.about .container .content h2 {
+		font-size: 64px;
+		letter-spacing: -1.12px;
+	}
+}
 
 .about .container .content h2 span {
 	color: #e1a423;
