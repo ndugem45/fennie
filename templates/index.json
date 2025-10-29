@@ -20,10 +20,59 @@
             "logo_link": "https://usawire.com/how-a-mothers-story-inspired-kickstarters-project-we-love-feenies-table-a-plate-thats-changing-the-way-we-eat/",
             "alt_text": "Logo"
           }
+        },
+        "logo_item_hJUjwQ": {
+          "type": "logo_item",
+          "name": "ceotimes",
+          "settings": {
+            "logo_image": "shopify://shop_images/fennie-feature-2.png",
+            "logo_link": "https://ceotimes.com/feenies-table-redefining-dining-through-culture-design-and-belonging/",
+            "alt_text": "Logo"
+          }
+        },
+        "logo_item_nWHQwn": {
+          "type": "logo_item",
+          "name": "gulfnews",
+          "settings": {
+            "logo_image": "shopify://shop_images/fennie-feature-3.png",
+            "logo_link": "https://gulfnews.com/friday/from-dubai-kitchen-to-global-success-the-story-behind-feenies-innovative-plate-1.500311543",
+            "alt_text": "Logo"
+          }
+        },
+        "logo_item_PNewpF": {
+          "type": "logo_item",
+          "name": "arabianpost",
+          "settings": {
+            "logo_image": "shopify://shop_images/fennie-feature-4.png",
+            "logo_link": "https://thearabianpost.com/feenies-table-the-dubai-born-brand-redesigning-how-the-world-eats/",
+            "alt_text": "Logo"
+          }
+        },
+        "logo_item_ew7m89": {
+          "type": "logo_item",
+          "name": "digital",
+          "settings": {
+            "logo_image": "shopify://shop_images/fennie-feature-5.png",
+            "logo_link": "https://www.digitaljournal.com/pr/news/binary-news-network/kickstarter-s-project-love-brings-cultural-1855188367.html?utm_source=chatgpt.com",
+            "alt_text": "Logo"
+          }
+        },
+        "logo_item_Lpn8Nb": {
+          "type": "logo_item",
+          "settings": {
+            "logo_image": "shopify://shop_images/fennie-feature-6.png",
+            "logo_link": "https://www.financialcontent.com/article/abnewswire-2025-10-10-feenies-table-kickstarter-campaign-fully-funded-within-20-hours-of-launching?utm_source=chatgpt.com",
+            "alt_text": "Logo"
+          }
         }
       },
       "block_order": [
-        "logo_item_HzBcYQ"
+        "logo_item_HzBcYQ",
+        "logo_item_hJUjwQ",
+        "logo_item_nWHQwn",
+        "logo_item_PNewpF",
+        "logo_item_ew7m89",
+        "logo_item_Lpn8Nb"
       ],
       "settings": {
         "label": "HONOURING  EVERY EATING STYLE",
