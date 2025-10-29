@@ -181,8 +181,10 @@ nav .right-group a {
 	text-transform: uppercase;
 	padding: 10px;
 }
-.img_float{
+
+.img_float--wrapper .img_float{
 	margin-left: auto;
+	margin-top: 50px;
 }
 
 .hero {
