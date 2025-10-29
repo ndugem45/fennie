@@ -51,7 +51,7 @@
   <div class="slideLabel">
     {{ section.settings.section_label }}
   </div>
-  <div class="link__logo" style="width: 100%; display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap;">
+  <div class="link__logo" style="width: 100%; max-width: ; display: flex; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap;">
     {% for block in section.blocks %}
       {% assign logo = block.settings.logo_image %}
       {% assign link = block.settings.logo_link %}
@@ -60,10 +60,10 @@
       {% if logo %}
         {% if link != blank %}
           <a href="{{ link }}" target="_blank" rel="noopener noreferrer">
-            <img class="link__logo-img" src="{{ logo | image_url: width: auto }}" height="80" alt="{{ alt }}">
+            <img class="link__logo-img" src="{{ logo | image_url: width: auto }}" height="20" alt="{{ alt }}">
           </a>
         {% else %}
-          <img class="link__logo-img" src="{{ logo | image_url: width: auto }}" height="80" alt="{{ alt }}">
+          <img class="link__logo-img" src="{{ logo | image_url: width: auto }}" height="20" alt="{{ alt }}">
         {% endif %}
       {% endif %}
     {% endfor %}
