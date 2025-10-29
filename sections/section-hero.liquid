@@ -60,10 +60,10 @@
       {% if logo %}
         {% if link != blank %}
           <a href="{{ link }}" target="_blank" rel="noopener noreferrer">
-            <img src="{{ logo | image_url: width: 200 }}" height="80" alt="{{ alt }}">
+            <img class="link__logo-img" src="{{ logo | image_url: width: auto }}" height="80" alt="{{ alt }}">
           </a>
         {% else %}
-          <img src="{{ logo | image_url: width: 200 }}" height="80" alt="{{ alt }}">
+          <img class="link__logo-img" src="{{ logo | image_url: width: auto }}" height="80" alt="{{ alt }}">
         {% endif %}
       {% endif %}
     {% endfor %}
