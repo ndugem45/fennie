@@ -32,6 +32,7 @@
     </a>
   {% endif %}
 </div>
+
 {% if section.settings.enable_slider %}
   <div class="container second">
       <div class="slideLabel">
@@ -44,7 +45,9 @@
       </div>
   </div>
 {% endif %}
-  <div class="running">
+
+
+  {% comment %} <div class="running">
     {% for a in (1..4) %}
       <div class="group">
         <div style="flex-shrink: 0;">
@@ -67,7 +70,7 @@
         </div>
       </div>
     {% endfor %}
-  </div>
+  </div> {% endcomment %}
 
 <script>
   $(document).ready(function(){
