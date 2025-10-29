@@ -181,6 +181,9 @@ nav .right-group a {
 	text-transform: uppercase;
 	padding: 10px;
 }
+.img_float{
+	margin-left: auto;
+}
 
 .hero {
 	color: #fff;
