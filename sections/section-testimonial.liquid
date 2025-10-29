@@ -6,6 +6,9 @@
   #shopify-section-{{section.id}} .slick-active{
     opacity: 1;
   }
+  #shopify-section-{{section.id}} .hide{
+    opacity: 0;
+  }
 {% endstyle %}
 
 
@@ -15,7 +18,7 @@
   <h2 class="scroll-animate" data-delay="500">
     {{ section.settings.title }}
   </h2>
-  <div class="img__stamp-testimoni">
+  <div class="img__stamp-testimoni hide">
     <img src="{{ 'stamp-240.png' | asset_url }}" alt="Stamp" width="240" height="240">
   </div>
 </div>
