@@ -11,6 +11,20 @@
   "sections": {
     "section-hero": {
       "type": "section-hero",
+      "blocks": {
+        "logo_item_HzBcYQ": {
+          "type": "logo_item",
+          "name": "usawire",
+          "settings": {
+            "logo_image": "shopify://shop_images/fennie-feature-1.png",
+            "logo_link": "https://usawire.com/how-a-mothers-story-inspired-kickstarters-project-we-love-feenies-table-a-plate-thats-changing-the-way-we-eat/",
+            "alt_text": "Logo"
+          }
+        }
+      },
+      "block_order": [
+        "logo_item_HzBcYQ"
+      ],
       "settings": {
         "label": "HONOURING  EVERY EATING STYLE",
         "title": "A custom plate crafted for the way we eat",
@@ -22,7 +36,8 @@
         "metafields": [
           "new-york-times",
           "vogue"
-        ]
+        ],
+        "section_label": "As featured in"
       }
     },
     "section_feature_7N7zdR": {
