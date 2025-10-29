@@ -257,6 +257,9 @@ nav .right-group a {
 .hero a {
 	margin-top: 48px;
 }
+.link__logo a {
+	margin-top: unset;
+}
 @media only screen and (max-width: 990px) {
 	.hero a{
 		margin-top: 32px;
