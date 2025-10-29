@@ -277,7 +277,9 @@ nav .right-group a {
 	.hero a{
 		margin-top: 32px;
 	}
-	.img_float--wrapper
+	.img_float--wrapper .img_float{
+
+	}
 }
 
 .hero h1 {
