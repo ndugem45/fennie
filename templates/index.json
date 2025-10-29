@@ -59,6 +59,7 @@
         },
         "logo_item_Lpn8Nb": {
           "type": "logo_item",
+          "name": "financial",
           "settings": {
             "logo_image": "shopify://shop_images/fennie-feature-6.png",
             "logo_link": "https://www.financialcontent.com/article/abnewswire-2025-10-10-feenies-table-kickstarter-campaign-fully-funded-within-20-hours-of-launching?utm_source=chatgpt.com",
