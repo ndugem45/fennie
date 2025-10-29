@@ -46,6 +46,17 @@
   </div>
 {% endif %}
 
+  <div class="container second">
+      <div class="slideLabel">
+        As seen in:
+      </div>
+      <div class="slide" style="width: 100%;">
+        {% for item in section.settings.metafields %}
+          <img src="{{ item.asset | img_url }}" height="80" alt="{{ item.title }}">
+        {% endfor %}
+      </div>
+  </div>
+
 
   {% comment %} <div class="running">
     {% for a in (1..4) %}
