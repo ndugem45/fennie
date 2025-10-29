@@ -4,6 +4,9 @@
     grid-template-columns: repeat({{ section.settings.grid }}, 1fr);
     margin-inline: auto;
   }
+    #shopify-section-{{section.id}} .hide{
+    opacity: 0;
+  }
 {% endstyle %}
 
 <div id="shop" class="container">
@@ -22,7 +25,7 @@
           fill="currentColor" />
       </svg>
     </a>
-    <div class="img-float_stamp">
+    <div class="img-float_stamp hide">
       <img src="{{ 'stamp-240.png' | asset_url }}" alt="Stamp" width="240" height="240">
     </div>
   </div>
