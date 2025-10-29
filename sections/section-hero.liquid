@@ -14,8 +14,8 @@
   Your browser does not support the video tag.
 </video>
 <div id="hero" class="container">
+  <img class="img_float" src="{{ stamp }}" width="180" height="180" alt="{{ stamp }}">
   <div class="content">
-    <img class="img_float" src="{{ stamp | image_url: width: auto }}" height="180" alt="{{ stamp }}">
     <span class="label scroll-animate" data-delay="0">{{ section.settings.label }}</span>
     <h1 class="scroll-animate" data-delay="100">{{ section.settings.title }}</h1>
     <div class="desc scroll-animate" data-delay="200">
