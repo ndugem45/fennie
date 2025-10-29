@@ -87,6 +87,7 @@
           "new-york-times",
           "vogue"
         ],
+        "enable_stamp": false,
         "stamp": "shopify://shop_images/stamp.png",
         "section_label": "As featured in"
       }
