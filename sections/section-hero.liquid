@@ -8,7 +8,7 @@
     {% endif %}
   }
   .img_float{
-    opacity: 0;
+    opacity: {% if section.settings.enable_stamp %}1{% else %}0{% endif %};
   }
 {% endstyle %}
 
@@ -198,7 +198,7 @@
     },
     {
       "type": "checkbox",
-      "id": "enable_img",
+      "id": "enable_stamp",
       "label": "Enable logo stamp",
       "default": true
     },
