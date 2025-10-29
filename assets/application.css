@@ -280,6 +280,9 @@ nav .right-group a {
 	.img_float--wrapper .img_float{
 		margin-top: 100px;
 	}
+	.hero .content {
+    margin-top: 60px;
+}
 }
 
 .hero h1 {
