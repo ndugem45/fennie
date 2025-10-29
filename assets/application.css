@@ -674,6 +674,9 @@ nav .right-group a {
 		font-size: 56px;
 		letter-spacing: -1.12px;
 	}
+	.head .img-float_stamp {
+		display: none;
+	}
 }
 
 .products .head h2 span {
