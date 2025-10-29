@@ -214,7 +214,7 @@ nav .right-group a {
 	align-items: flex-start;
 }
 
-.hero .container {
+#hero .container {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
