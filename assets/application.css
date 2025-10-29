@@ -1321,6 +1321,12 @@ nav .right-group a {
 	background: white;
 	padding-block: 64px;
 }
+.testimoni__text{
+	position: relative;
+}
+.testimoni__text { 
+	position: relative;
+}
 @media only screen and (max-width: 990px) {
 	.testimonial {
 		padding-block: 64px;
