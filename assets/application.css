@@ -186,7 +186,7 @@ nav .right-group a {
 	color: #fff;
 	text-align: center;
 	padding-top: 45.5vh;
-	padding-bottom: 64px;
+	/* padding-bottom: 64px; */
 	position: relative;
 }
 @media only screen and (max-width: 990px) {
