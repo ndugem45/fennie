@@ -262,8 +262,8 @@ nav .right-group a {
 	margin-top: unset;
 }
 
-.link__logo img {
-	padding: unset;
+.link__logo .link__logo-img {
+	padding: unset!important;
 }
 
 @media only screen and (max-width: 990px) {
